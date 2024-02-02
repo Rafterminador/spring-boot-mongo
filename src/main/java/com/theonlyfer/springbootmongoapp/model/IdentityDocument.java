@@ -14,4 +14,5 @@ public class IdentityDocument {
     private String expiryDate;
     private Date emissionDate;
     private DocumentType documentType;
+    private Boolean isActive;
 }
