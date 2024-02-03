@@ -4,5 +4,5 @@ import com.theonlyfer.springbootmongoapp.dto.TokenDTO;
 import com.theonlyfer.springbootmongoapp.model.User;
 
 public interface LoginService {
-    public TokenDTO login(User user);
+    public TokenDTO login(User user) throws Exception;
 }

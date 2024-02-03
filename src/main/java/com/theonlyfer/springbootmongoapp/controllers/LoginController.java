@@ -17,7 +17,7 @@ public class LoginController {
     private LoginService loginService;
 
     @PostMapping
-    public ResponseEntity<TokenDTO> login (@RequestBody User user) {
+    public ResponseEntity<TokenDTO> login (@RequestBody User user) throws Exception {
         TokenDTO response = loginService.login(user);
         return ResponseEntity.ok(response);
     }
